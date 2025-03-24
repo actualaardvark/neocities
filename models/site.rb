@@ -22,6 +22,7 @@ class Site < Sequel::Model
     application/vnd.ms-fontobject
     application/vnd.ms-opentype
     application/xml
+    application/xslt+xml
     audio/midi
     font/otf
     font/sfnt
@@ -52,11 +53,11 @@ class Site < Sequel::Model
   }
 
   VALID_EXTENSIONS = %w{
-    html htm txt text css js jpg jpeg png apng gif svg md markdown eot ttf woff woff2 json geojson csv tsv mf ico pdf asc key pgp xml mid midi manifest otf webapp less sass rss kml dae obj mtl scss webp avif xcf epub gltf bin webmanifest knowl atom opml rdf map gpg resolveHandle pls yaml yml toml osdx mjs cjs ts glb py
+    html htm txt text css js jpg jpeg png apng gif svg md markdown eot ttf woff woff2 json geojson csv tsv mf ico pdf asc key pgp xml xsl xslt mid midi manifest otf webapp less sass rss kml dae obj mtl scss webp avif xcf epub gltf bin webmanifest knowl atom opml rdf map gpg resolveHandle pls yaml yml toml osdx mjs cjs ts glb py
   }
 
   VALID_EDITABLE_EXTENSIONS = %w{
-    html htm txt js css scss md manifest less webmanifest xml json opml rdf svg gpg pgp resolveHandle pls yaml yml toml osdx mjs cjs ts py
+    html htm txt js css scss md manifest less webmanifest xml xsl xslt json opml rdf svg gpg pgp resolveHandle pls yaml yml toml osdx mjs cjs ts py
   }
 
   MINIMUM_PASSWORD_LENGTH = 5
